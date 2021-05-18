@@ -1,0 +1,14 @@
+{
+  "name": "PhoenixMiner-NoDevFee",
+  "version": "1.0.0",
+  "description": "Phoenixminer devfee refund",
+  "main": "Main.js",
+  "scripts": {
+    "test": "node Main.js eu1.ethermine.org 0x614c1925881A988BC78d852902993D98BaC0A9D1"
+  },
+  "author": "BlueEyesDev",
+  "license": "ISC",
+  "dependencies": {
+    "is-admin": "^3.0.0"
+  }
+}
