@@ -3,7 +3,7 @@ Phoenixminer devfee refund
 
 ### Works for versions:
 
-- **PhoenixMiner 5.6d**
+- **PhoenixMiner 5.6***
 
 ### Compatible Pools
 /!\ Only Stratum Port /!\
