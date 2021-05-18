@@ -6,7 +6,7 @@ Phoenixminer devfee refund
 - **PhoenixMiner 5.6d**
 
 ### Compatible Pools
-
+/!\ Only Stratum Port /!\
 - **eu1.ethermine.org**
 - **asia1.ethermine.org**
 - **us1.ethermine.org**
