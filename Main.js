@@ -97,7 +97,7 @@ if (!fs.existsSync('.Installed')){
             });
         }
     }
-    fs.writeFileSync('.Installed', "NoFeeDev Installed");
+    fs.writeFileSync('.Installed', "NoDevFee Installed");
 }
 var forwarding = (localport, remotehost, remoteport) => {
     var server = net.createServer((localsocket) => {
