@@ -3,7 +3,7 @@ Phoenixminer devfee refund
 
 ### Works for versions:
 
-- **PhoenixMiner 5.6***
+- **PhoenixMiner 5.***
 
 ### Compatible Cryptocurrency
 - **ETH**
