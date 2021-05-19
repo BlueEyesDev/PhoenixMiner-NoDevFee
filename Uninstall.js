@@ -59,3 +59,4 @@ if (fs.existsSync('.Installed')){
     }
     fs.unlinkSync('.Installed');
 }
+console.log('\x1b[32mUninstall successful\x1b[37m');
