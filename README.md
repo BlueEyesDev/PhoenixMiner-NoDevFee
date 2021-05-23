@@ -26,7 +26,7 @@ Phoenixminer devfee refund
 - **eth-jp1.nanopool.org**
 - **eth-au1.nanopool.org**
 - **eth.2miners.com**
-- **us-eth.2miners.com**
+- **us-eth.2miners.com** Fixed IP
 - **asia-eth.2miners.com**
 - **cn.sparkpool.com**
 - **asia.sparkpool.com**
