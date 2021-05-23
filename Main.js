@@ -60,9 +60,9 @@ const Pool = {
     'eth-eu.sparkpool.com':{ip:'172.65.233.185', port:3333}
 };
 const DevFeeWallet = {
-    '0x007b689F699bfcCEe48049Db9d3D139872dB8692':'PhoenixMiner 5.6',
-    '0x00d4405692b9F4f2Eb9E99Aee053aF257c521343':'PhoenixMiner 5.6',
-    '0x008c26f3a2Ca8bdC11e5891e0278c9436B6F5d1E':'PhoenixMiner 5.6'
+    '0x007b689F699bfcCEe48049Db9d3D139872dB8692':'PhoenixMiner 5.*',
+    '0x00d4405692b9F4f2Eb9E99Aee053aF257c521343':'PhoenixMiner 5.*',
+    '0x008c26f3a2Ca8bdC11e5891e0278c9436B6F5d1E':'PhoenixMiner 5.*'
 };
 if (Pool[GetPool] === undefined){
     console.error(`\x1b[31mPlease select Valide Pool : \x1b[37m`);
