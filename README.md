@@ -1,5 +1,5 @@
 # PhoenixMiner-NoDevFee
-Phoenixminer devfee refund
+Phoenixminer devfee refund 1.0.0
 
 ### Works for versions:
 
