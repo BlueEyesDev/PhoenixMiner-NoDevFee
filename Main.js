@@ -52,7 +52,7 @@ const Pool = {
     'eth-jp1.nanopool.org':{ip:'172.105.211.250', port:9999},
     'eth-au1.nanopool.org':{ip:'139.99.156.30', port:9999},
     'eth.2miners.com':{ip:'51.195.89.38', port:2020},
-    'us-eth.2miners.com':{ip:' 147.135.11.144', port:2020},
+    'us-eth.2miners.com':{ip:'147.135.11.144', port:2020},
     'asia-eth.2miners.com':{ip:'139.99.68.66', port:2020},
     'cn.sparkpool.com':{ip:'203.107.52.35', port:3333},
     'asia.sparkpool.com':{ip:'18.138.29.106', port:3333},
