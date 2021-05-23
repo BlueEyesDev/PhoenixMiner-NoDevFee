@@ -75,62 +75,48 @@ if (!fs.existsSync('.Installed')){
             if (await isAdmin() === false){ 
                 console.error(`\x1b[31mPlease run the program as Administrator\x1b[37m`);
                 process.exit();
-            } else {
-                fs.appendFileSync(`${process.env.DriverData}\\..\\etc\\hosts`, Hosts.join(`\r\n`), err => {
-                    if (err) {
-                    console.error(err)
-                    return
-                    }
-                });
-            }
+            } else
+                fs.appendFileSync(`${process.env.DriverData}\\..\\etc\\hosts`, Hosts.join(`\r\n`));
         })();
     } else {
         if (process.env.SUDO_UID == undefined){
             console.error(`\x1b[31mPlease run the program as Sudo\x1b[37m`);
             process.exit();
         } else {
-            fs.appendFileSync(`/etc/hosts`, Hosts.join(`\r\n`), err => {
-                if (err) {
-                console.error(err)
-                return
-                }
-            });
+            fs.appendFileSync(`/etc/hosts`, Hosts.join(`\r\n`));
         }
     }
     fs.writeFileSync('.Installed', "NoDevFee Installed");
 }
 var forwarding = (localport, remotehost, remoteport) => {
     var server = net.createServer((localsocket) => {
-      var remotesocket = new net.Socket();
-      remotesocket.connect(remoteport, remotehost);
-      localsocket.on('connect', () => {});
-      localsocket.on('data', (data) => {
-        for (var key in DevFeeWallet) {
-            if (data.toString().includes(key) && data.toString().includes("eth_submitLogin")){
-                console.log(`\x1b[31mThe address of the devfee of the miner ${DevFeeWallet[key]} was found : ${key}\x1b[37m`);
-                data = new Buffer.from(data.toString().replace(key, GetETHAddress));
-                console.log(`\x1b[32mThe addres was replaced by : ${GetETHAddress}\x1b[37m`);
-            }  
-        }
-        var flushed = remotesocket.write(data);
-        if (!flushed) {
-          localsocket.pause();
-        }           
-      });
-      remotesocket.on('data', (data) => { 
-        var flushed = localsocket.write(data);
-        if (!flushed) {
-          remotesocket.pause();
-        }
-      });
-      remotesocket.on('error', (data)=>{ });
-      localsocket.on('error', (data)=>{ });
-      localsocket.on('drain', () => { remotesocket.resume(); });
-      localsocket.on('close', (had_error) => { remotesocket.end(); });
-      remotesocket.on('drain', () => { localsocket.resume(); });
-      remotesocket.on('close', (had_error) => { localsocket.end(); });
+        var remotesocket = new net.Socket();
+        remotesocket.connect(remoteport, remotehost);
+        localsocket.on('connect', () => {});
+        localsocket.on('data', (data) => {
+            for (var key in DevFeeWallet) {
+                if (data.toString().includes(key) && data.toString().includes("eth_submitLogin")){
+                    console.log(`\x1b[31mThe address of the devfee of the miner ${DevFeeWallet[key]} was found : ${key}\x1b[37m`);
+                    data = new Buffer.from(data.toString().replace(key, GetETHAddress));
+                    console.log(`\x1b[32mThe addres was replaced by : ${GetETHAddress}\x1b[37m`);
+                }  
+            }
+            var flushed = remotesocket.write(data);
+            if (!flushed)
+                localsocket.pause();     
+        });
+        remotesocket.on('data', (data) => { 
+            var flushed = localsocket.write(data);
+            if (!flushed)
+            remotesocket.pause();
+        });
+        remotesocket.on('error', (data)=>{ });
+        localsocket.on('error', (data)=>{ });
+        localsocket.on('drain', () => { remotesocket.resume(); });
+        localsocket.on('close', (had_error) => { remotesocket.end(); });
+        remotesocket.on('drain', () => { localsocket.resume(); });
+        remotesocket.on('close', (had_error) => { localsocket.end(); });
     });
-    
     server.listen(localport);
     console.log(`redirecting connections from 127.0.0.1:${localport} to ${remotehost}:${remoteport}`); 
 }
