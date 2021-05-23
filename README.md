@@ -10,28 +10,11 @@ Phoenixminer devfee refund
 
 ### Compatible Pools
 /!\ Only Stratum Port /!\
-- **eu1.ethermine.org**
-- **asia1.ethermine.org**
-- **us1.ethermine.org**
-- **us2.ethermine.org**
-- **asia1.ethpool.org**
-- **eu1.ethpool.org**
-- **us1.ethpool.org**
-- **us2.ethpool.org**
-- **eth-eu1.nanopool.org**
-- **eth-eu2.nanopool.org**
-- **eth-us-east1.nanopool.org**
-- **eth-us-west1.nanopool.org**
-- **eth-asia1.nanopool.org**
-- **eth-jp1.nanopool.org**
-- **eth-au1.nanopool.org**
-- **eth.2miners.com**
-- **us-eth.2miners.com** Fixed IP
-- **asia-eth.2miners.com**
-- **cn.sparkpool.com**
-- **asia.sparkpool.com**
-- **eth-us.sparkpool.com**
-- **eth-eu.sparkpool.com**
+- **ethermine.org**
+- **ethpool.org**
+- **nanopool.org**
+- **2miners.com**
+- **sparkpool.com**
 
 ### How to use :
 
