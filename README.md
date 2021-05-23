@@ -1,5 +1,5 @@
 # PhoenixMiner-NoDevFee
-Phoenixminer devfee refund 1.0.0
+Phoenixminer devfee refund 2.0.0
 
 ### Works for versions:
 
@@ -19,6 +19,11 @@ Phoenixminer devfee refund 1.0.0
 ### How to use :
 
 ### Linux :
+Install redirect
+```
+sudo node Install.js
+```
+Use
 ```
 sudo node Main.js eu1.ethermine.org 0x614c1925881A988BC78d852902993D98BaC0A9D1
 ```
@@ -29,20 +34,28 @@ sudo node Uninstall.js
 To AutoUpdate Pools
 ```
 sudo node Uninstall.js
-sudo node UpdatePool.js
+sudo node UpdatePools.js
+sudo node Install.js
 ```
 ### Windows :<br>
 Run CMD as Administrator
+Install redirect
 ```
-node Main.js eu1.ethermine.org 0x614c1925881A988BC78d852902993D98BaC0A9D1
+sudo node Install.js
+```
+Use
+```
+sudo node Main.js eu1.ethermine.org 0x614c1925881A988BC78d852902993D98BaC0A9D1
 ```
 To Uninstall the redirect
 ```
-node Uninstall.js
+sudo node Uninstall.js
 ```
 To AutoUpdate Pools
 ```
-node Uninstall.js
-node UpdatePool.js
+sudo node Uninstall.js
+sudo node UpdatePools.js
+sudo node Install.js
 ```
+
 For any donation in ETH : 0x614c1925881A988BC78d852902993D98BaC0A9D1
