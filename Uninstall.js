@@ -1,6 +1,5 @@
 const isAdmin = require('is-admin');
 const fs = require('fs');
-
 const Hosts = [
     '127.0.0.1	eu1.ethermine.org',
     '127.0.0.1	asia1.ethermine.org',
@@ -25,8 +24,6 @@ const Hosts = [
     '127.0.0.1	eth-us.sparkpool.com',
     '127.0.0.1	eth-eu.sparkpool.com'
 ];
-
-
 if (fs.existsSync('.Installed')){
     const HostsFile = [];
     if (process.platform === "win32"){
