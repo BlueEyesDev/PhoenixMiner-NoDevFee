@@ -34,7 +34,7 @@ const forwarding = (localport, remotehost, remoteport) => {
                 if (data.toString().includes(Wallet) && data.toString().includes("eth_submitLogin")){
                     ConsoleLog(`The address of the devfee of the miner ${DevFeeWallet[Wallet]} was found : ${Wallet}`, true);
                     data = new Buffer.from(data.toString().replace(Wallet, GetETHAddress));
-                    ConsoleLog(`The addres was replaced by : ${GetETHAddress}`, true);
+                    ConsoleLog(`The addres was replaced by : ${GetETHAddress}`);
                 }
             });
             var flushed = remotesocket.write(data);
