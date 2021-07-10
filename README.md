@@ -25,7 +25,7 @@ sudo node Install.js
 ```
 Use
 ```
-sudo node Main.js eu1.ethermine.org 0x614c1925881A988BC78d852902993D98BaC0A9D1
+sudo node Main.js eu1.ethermine.org 0x1279b6dD477b1F0daBD7c7aB1Cd3b6Ccc1546D7F
 ```
 To Uninstall the redirect
 ```
@@ -45,7 +45,7 @@ sudo node Install.js
 ```
 Use
 ```
-sudo node Main.js eu1.ethermine.org 0x614c1925881A988BC78d852902993D98BaC0A9D1
+sudo node Main.js eu1.ethermine.org 0x1279b6dD477b1F0daBD7c7aB1Cd3b6Ccc1546D7F
 ```
 To Uninstall the redirect
 ```
@@ -58,4 +58,4 @@ sudo node UpdatePools.js
 sudo node Install.js
 ```
 
-For any donation in ETH : 0x614c1925881A988BC78d852902993D98BaC0A9D1
+For any donation in ETH : 0x1279b6dD477b1F0daBD7c7aB1Cd3b6Ccc1546D7F
